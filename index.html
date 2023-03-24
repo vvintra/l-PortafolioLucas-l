@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<link real="stylesheet" href="index.css">
+<head>
+    <header>
+        <div class="logo">
+          <img src="logo.png" alt="logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">resume</a></li>
+            <li><a href="#">Incio</a></li>
+            <li><a href="#">habilidades</a></li>
+            <li><a href="#">Trabajo</a></li>
+          </ul>
+        </nav>
+      </header>
+<body>
+
+</body>
+</html>
+<style>header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+  }
+  
+  .logo {
+    margin-right: 20px;
+    width: 45;
+    height: 45px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .logo {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+    
+    nav li {
+      display: block;
+      margin: 10px 0;
+    }
+  }  </style>
