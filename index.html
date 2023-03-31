@@ -1,105 +1,41 @@
 <!DOCTYPE html>
-<html lang="es">
-<link real="stylesheet" href="index.css">
-
+<html>
 <head>
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">resume</a></li>
-        <li><a href="#">Incio</a></li>
-        <li><a href="#">habilidades</a></li>
-        <li><a href="#">Trabajo</a></li>
-      </ul>
-    </nav>
-  </header>
-
+	<title>Portafolio de Lucas</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+</head>
 <body>
-  <div class="container">
-    <div class="box">
-      <div class="text">Hello, World!</div>
+
+<header>
+	<img src="logo.png" alt="Logo de Lucas">
+	<nav>
+		<a href="#">Inicio</a>
+		<a href="#">Habilidades</a>
+		<a href="#">Trabajo</a>
+	</nav>
+</header>
+
+<div id="animacion">"¡Hola! Mi nombre es Lucas y soy un apasionado de la tecnología y la programación.
+  Te doy la bienvenida a mi portafolio."</div>
+ 
+  <div class="caja-texto" >
+    <input type="text" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Sed aliquet enim ac leo malesuada sagittis. Sed nec ex nisi.
+     Pellentesque id ante vel tortor vehicula bibendum. In hac habitasse platea dictumst. 
+     Donec tincidunt libero vel mauris dignissim fringilla. Nullam non ligula ac tellus pretium bibendum. 
+     Donec posuere, 
+    velit et varius gravida, sem ante vulputate dolor, eget laoreet odio massa id nib.">
+  </div>
+  
+    <footer>
+  <p>&copy; 2023 Portafolio de Lucas</p>
+  <ul class="social-links">
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">LinkedIn</a></li>
+  </ul>
+</footer>
+<script src="animacion.js"></script>
 </body>
-
 </html>
-<style>
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px;
-  }
-
-  .logo {
-    margin-right: 20px;
-    width: 45;
-    height: 45px;
-  }
-
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-
-  nav li:last-child {
-    margin-right: 0;
-  }
-
-  nav a {
-    color: #ccc;
-    text-decoration: none;
-  }
-
-  @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .logo {
-      margin-bottom: 10px;
-      margin-right: 0;
-    }
-
-    nav li {
-      display: block;
-      margin: 10px 0;
-    }
-  }
-  .container {
-        position: relative;
-        width: 100%;
-        height: 500px;
-        background-image: url('background-image.jpg');
-        background-size: cover;
-      }
-      
-      .box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 300px;
-        height: 100px;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        padding: 10px;
-      }
-      
-      .text {
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center;
-      }
-</style>
