@@ -7,7 +7,7 @@ function typeWriter() {
   if (i < txt.length) {
     animacion.innerHTML += txt.charAt(i);
     i++;
-    setTimeout(typeWriter, 100);
+    setTimeout(typeWriter, 50);
   }
 }
 
