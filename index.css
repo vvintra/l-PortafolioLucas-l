@@ -1,83 +1,80 @@
 body {
-	background-image: url("background-image.jpg");
-	background-size: cover;
-  font-size: 16px;
-  line-height: 1.5;
+  background-image: url("background-image.jpg");
   background-size: cover;
+  font-size: 1em;
+  line-height: 1.5;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-header {
+@media (max-width: 1024px) {
+  body {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: contain;
+  }
+}
+
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+
+/* Estilos generales */
+body {
   font-family: 'Exo 2', sans-serif;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px 20px;
-	background-color: transparent;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  background-color: transparent;
+}
+
+/* Cabecera */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   max-width: 100%;
 }
 
 header img {
-	height: 30px;
-	margin-right: 10px;
+  height: 2rem;
+  margin-right: 0.5rem;
   border-radius: 50%;
 }
 
 header nav {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 
 header nav a {
-  margin-left: 20px;
+  margin-left: 1rem;
   color: #cfcaca;
   text-decoration: none;
   font-weight: bold;
 }
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-	background-color: transparent;
-  text-align: center;
-}
 
-footer p {
-    margin-bottom: 10px;
-}
-
-.social-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.social-links li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.social-links a {
-    color: #fff;
-    text-decoration: none;
-}
+/* Pie de página */
 footer {
   background-color: transparent;
   color: #ece7e7;
-  padding: 20px;
+  padding: 1rem;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .social-links {
@@ -88,44 +85,113 @@ footer p {
 
 .social-links li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 0.5rem;
 }
 
 .social-links a {
   color: #f1e7e7;
   text-decoration: none;
 }
+
+/* Animación */
+
 #animacion {
   font-family: 'Exo 2', sans-serif;
   position: absolute;
   top: 170px;
   right: 50px;
-  left: 800px;
+  left: 670px;
   font-size: 1.4em;
   font-weight: bold;
-  color: rgb(202, 198, 198); 
+  color: rgb(202, 198, 198);
   opacity: 0;
-  background-color: transparent; 
+  background-color: transparent;
 }
 
-.caja-texto {
-  position: absolute;
-  top: 250px;
-  right: 0;
-  width: 90%;
-  max-width: 300px;
-  margin-right: 35%;
+/* Reglas de estilo para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header img {
+    height: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  header nav {
+    margin-top: 0.5rem;
+    margin-left: 0;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+
+  header nav a {
+    margin-left: 0.5rem;
+  }
+
+  #animacion {
+    top: 12rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+/* Estilos para la sección de habilidades */
+
+.skills {
+  padding: 40px;
+  text-align: center;
 }
 
-.caja-texto input[type="text"] {
-  width: 230%;
-  pointer-events: none;
-  height: 230px;
-  padding: 10px;
+.skills h2 {
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  color: #f8f8f8;
+}
+
+.skill {
+  display: inline-block;
+  width: 25%;
+  margin-bottom: 40px;
+}
+
+.skill h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.progress {
+  background-color: #ddd;
   border-radius: 5px;
-  border: none;
-  background-color: #1b1b1b;
-  color: #fff;
-  font-size: 16px;
+  height: 10px;
+  margin-bottom: 20px;
 }
 
+.progress .bar {
+  background-color: #5cb85c;
+  border-radius: 5px;
+  height: 10px;
+  transition: width 1s ease-in-out;
+  
+}
+
+
+
+
+/* Reglas de estilo para pantallas de tamaño pequeño a mediano */
+@media (max-width: 1024px) {
+  .skill {
+    width: 50%;
+  }
+}
+
+/* Reglas de estilo para pantallas de tamaño pequeño */
+@media (max-width: 768px) {
+  .skill {
+    width: 100%;
+  }
+}
