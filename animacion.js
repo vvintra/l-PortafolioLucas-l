@@ -1,5 +1,5 @@
 const animacion = document.querySelector('#animacion');
-const txt = "¡Hola! Mi nombre es Lucas y soy un apasionado de la tecnología y la programación. Te doy la bienvenida a mi portafolio.\n\n*********************************************************************************************************** *****************************************Soy un programador**************************************** *************************************creador de realidad virtual************************************* **********************************************con código********************************************** *********************************y teclado creo mundos sin igual********************************** ***********************************************************************************************************";
+const txt = "¡Hola! Mi nombre es Lucas y soy un apasionado de la tecnología y la programación. Te doy la bienvenida a mi portafolio.";
 
 function escribirTexto(velocidad) {
   let i = 0;

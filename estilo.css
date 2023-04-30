@@ -178,6 +178,42 @@ footer p {
   transition: width 1s ease-in-out;
   
 }
+/* Estilos para la sección de trabajo */
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.work-item {
+  margin: 10px;
+  text-align: center;
+  flex-basis: 45%;
+  max-width: 350px;
+}
+
+.work-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100px;
+}
+
+.work-item h3 {
+  margin: 10px 0 0;
+  font-size: 20px;
+}
 
 
 
